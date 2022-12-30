@@ -1,5 +1,5 @@
 import "./styles.css";
-import printTriangle from "./programStructure/loopingTriangle";
+import hashTriangle from "./programStructure/loopingTriangle";
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
@@ -10,4 +10,5 @@ document.getElementById("app").innerHTML = `
 </div>
 `;
 
-printTriangle();
+document.getElementById("app").innerHTML +=
+  "\n" + hashTriangle().replaceAll("\n", "<br />");
