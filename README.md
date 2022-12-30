@@ -1,2 +1,2 @@
 # eloquent-javascript-exercises
-Created with CodeSandbox
+Sandbox for exercises from Eloquent JavaScript book by Marijn Haverbeke.
