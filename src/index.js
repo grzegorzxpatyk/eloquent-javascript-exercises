@@ -1,4 +1,5 @@
 import "./styles.css";
+import printTriangle from "./programStructure/loopingTriangle";
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
@@ -8,3 +9,5 @@ document.getElementById("app").innerHTML = `
   <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
 </div>
 `;
+
+printTriangle();
