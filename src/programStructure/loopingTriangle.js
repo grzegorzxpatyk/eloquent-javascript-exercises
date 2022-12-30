@@ -1,4 +1,4 @@
-function printTriangle() {
+function hashTriangle() {
   const hash = "#";
   let triangleString = "";
 
@@ -10,7 +10,7 @@ function printTriangle() {
     triangleString += hashRow + "\n";
   }
 
-  console.log(triangleString);
+  return triangleString;
 }
 
-export default printTriangle;
+export default hashTriangle;
