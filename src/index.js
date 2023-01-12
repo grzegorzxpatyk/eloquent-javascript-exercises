@@ -1,5 +1,6 @@
 import "./styles.css";
 import hashTriangle from "./programStructure/loopingTriangle";
+import { fizzBuzz } from "./programStructure/fizzBuzz";
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
@@ -12,3 +13,5 @@ document.getElementById("app").innerHTML = `
 
 document.getElementById("app").innerHTML +=
   "\n" + hashTriangle().replaceAll("\n", "<br />");
+
+fizzBuzz();
