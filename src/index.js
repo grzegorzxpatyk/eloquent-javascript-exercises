@@ -1,6 +1,7 @@
 import './styles.css';
 import hashTriangle from './programStructure/loopingTriangle';
 import { fizzBuzz } from './programStructure/fizzBuzz';
+import { printChessboard } from './programStructure/chessboard';
 
 document.getElementById('app').innerHTML = `
 <h1>Hello Vanilla!</h1>
@@ -11,7 +12,9 @@ document.getElementById('app').innerHTML = `
 </div>
 `;
 
-document.getElementById('app').innerHTML +=
-  '\n' + hashTriangle().replaceAll('\n', '<br />');
+// document.getElementById('app').innerHTML +=
+//   '\n' + hashTriangle().replaceAll('\n', '<br />');
 
-fizzBuzz();
+// fizzBuzz();
+
+document.querySelector('#app').innerHTML += printChessboard(8).replaceAll('\n', '<br />');
