@@ -1,8 +1,8 @@
-import "./styles.css";
-import hashTriangle from "./programStructure/loopingTriangle";
-import { fizzBuzz } from "./programStructure/fizzBuzz";
+import './styles.css';
+import hashTriangle from './programStructure/loopingTriangle';
+import { fizzBuzz } from './programStructure/fizzBuzz';
 
-document.getElementById("app").innerHTML = `
+document.getElementById('app').innerHTML = `
 <h1>Hello Vanilla!</h1>
 <div>
   We use the same configuration as Parcel to bundle this sandbox, you can find more
@@ -11,7 +11,7 @@ document.getElementById("app").innerHTML = `
 </div>
 `;
 
-document.getElementById("app").innerHTML +=
-  "\n" + hashTriangle().replaceAll("\n", "<br />");
+document.getElementById('app').innerHTML +=
+  '\n' + hashTriangle().replaceAll('\n', '<br />');
 
 fizzBuzz();
