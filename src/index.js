@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const paragraph = document.createElement('p');
   paragraph.style.lineHeight = '1.2';
+  paragraph.style.textAlign = 'justify';
   paragraph.innerText = 'This is a exercise playground to repeat the basics of Vanilla JavaScript using the exercises from the end of every chapter of Eloquent JavaScript book.'
 
   const titleSection = document.createElement('section');
