@@ -1,16 +1,23 @@
 import './styles.css';
-import { printChessboard } from './programStructure/chessboard';
+import minimumOfTwo from './functions/minimum';
 
-document.getElementById('app').innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+const rootContainer = document.querySelector('#app');
 
-document.querySelector('#app').innerHTML += printChessboard(8).replaceAll(
-  '\n',
-  '<br />'
-);
+window.addEventListener('DOMContentLoaded', () => {
+  const heading = document.createElement('h1');
+  heading.style.color = 'cornflower blue';
+  heading.innerText = 'Eloquent JavaScript Sandbox';
+
+  const paragraph = document.createElement('p');
+  paragraph.style.lineHeight = '1.2';
+  paragraph.innerText = 'This is a exercise playground to repeat the basics of Vanilla JavaScript using the exercises from the end of every chapter of Eloquent JavaScript book.'
+
+  const titleSection = document.createElement('section');
+  titleSection.style.display = 'flex';
+  titleSection.style.flexDirection = 'column';
+  titleSection.style.width = 'min(90vw, 500px)'
+
+  titleSection.append(heading, paragraph);
+  rootContainer.append(titleSection);
+  console.log(minimumOfTwo(7, 69));
+})
